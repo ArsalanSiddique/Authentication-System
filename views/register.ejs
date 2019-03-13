@@ -1,0 +1,16 @@
+
+<% include header %>
+<div class="login-page">
+    <div class="form" action="/register" method="POST">
+        <form class="register-form">
+            <input type="text" name="name" placeholder="name" />
+            <input type="text" name="email"  placeholder="email address" />
+            <input type="password" name="password"  placeholder="password" />
+            <!-- <input type="submit" name="register" value="Register" /> -->
+            <button type="submit">Register</button>
+            <p class="message">Already registered? <a href="/user/login">Sign In</a></p>
+        </form>
+    </div>
+</div>
+
+<% include footer %>

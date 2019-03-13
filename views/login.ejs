@@ -1,0 +1,14 @@
+
+<% include header %>
+    <div class="login-page">
+        <div class="form" action="/user/login" method="POST">
+            <form class="login-form">
+                <input type="text" name="name" placeholder="username" />
+                <input type="password" name="password" placeholder="password" />
+                <button>login</button>
+                <p class="message">Not registered? <a href="register">Create an account</a></p>
+            </form>
+        </div>
+    </div>
+
+<% include footer %>
