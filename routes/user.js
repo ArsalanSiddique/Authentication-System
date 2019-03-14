@@ -14,5 +14,8 @@ router.get('/user/register', (req, res) => {
     res.render('register');
 })
 
-router.post('/user/register', crud.addData);
+// router.post('/user/register', crud.addData);
+router.post('/user/register', (req, res) => {
+    res.send('working post method.')
+});
 module.exports = router;
